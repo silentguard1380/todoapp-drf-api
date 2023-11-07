@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<h1>welcome to my frist drf app</h1>
+<hr>
+
+<ul>
+    {% for todo in todos %}
+    <li>{{ todo.title }}</li>
+
+    {% endfor %}
+</ul>
+</body>
+</html>
