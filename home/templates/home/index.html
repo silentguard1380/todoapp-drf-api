@@ -8,9 +8,11 @@
 <h1>welcome to my frist drf app</h1>
 <hr>
 
-<ul>
+<ul style="background-color:pink;">
     {% for todo in todos %}
     <li>{{ todo.title }}</li>
+    <li style="color:green;">{{ todo.content }}</li>
+    <hr>
 
     {% endfor %}
 </ul>

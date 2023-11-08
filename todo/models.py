@@ -10,5 +10,7 @@ class Todo(models.Model):
     priority = models.IntegerField(default=1)
     is_done = models.BooleanField()
 
+    def __str__(self):
+        return self.title
     class Meta:
         db_table = "todos"   # نامی که جدولمان در دیتابیس ذخیره میشود
